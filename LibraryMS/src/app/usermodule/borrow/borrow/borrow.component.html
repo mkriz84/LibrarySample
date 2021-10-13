@@ -1,0 +1,29 @@
+<!-- <p>borrow works!</p> -->
+<br>
+
+<div>
+
+  
+    <div style="padding-left: 4%;">
+        <div class="card" style="width:66.5rem;">
+            <div>
+                <table class="table">
+                    <thead class="thead bg-danger text-light">
+                        <tr>
+                            <th   *ngIf="false"  scope="col">id</th>
+                            <th scope="col">BOOK TITLE</th>
+                         
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr *ngFor="let book of books | borrowSearch:bookSearch">
+                            <td *ngIf="false"  >{{book.id}}</td>
+                            <td  (click)="SelectedBook(book.id,book.bookName);"   >{{book.bookName}}</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

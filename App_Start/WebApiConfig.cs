@@ -1,4 +1,6 @@
 ﻿using System.Web.Http;
+using Library.Controllers;
+
 
 namespace Library
 {
@@ -6,8 +8,12 @@ namespace Library
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
 
+
+            config.EnableCors();
+            UnityConfig.ConfigureUnity(config);
+            // Web API configuration and services
+        
             // Web API routes
             config.MapHttpAttributeRoutes();
 

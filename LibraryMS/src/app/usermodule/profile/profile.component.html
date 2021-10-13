@@ -1,0 +1,63 @@
+<br>
+<div *ngIf="userProfile" style="padding-left: 3%;">
+    <div class="card">
+        <div>
+            <div class="card md-4 " style="max-width: 100%">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="card bg-light text-dark text-center">
+                            <div class="card-header bg-danger text-light">
+                                Selected Book
+                                <br>
+
+                            </div>
+                            <img style="width: 100%;" src="./assets/images/yoab-anderson-IHC5LPAoGrs-unsplash.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <div   >
+                                    <!-- <h5 class="card-title">Name</h5> -->
+                                    <p class="card-text">{{bookName}}</p>
+                                </div>
+                              
+                                <div>
+                                    <br>
+
+                                </div>
+
+
+                            </div>
+                            <!-- <div class="card-footer text-muted">
+                                <div  *ngIf="mode=='Search'"   style="display: inline-block;" >
+                                    <input style="width:17rem;" placeholder="Search" type="text" class="form-control" [(ngModel)]='bookSearch'>
+                                </div>
+                                <div  *ngIf="mode=='Search'"  style="display: inline-block;" >
+                                <a class="btn btn-block btn-primary" href='#' (click)="TextSearch()">Search</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <br>
+                            <br>
+                            <br>
+                       
+                            <h5   class="text-center">Most Common words</h5>
+                            
+                            <br>
+
+                            <ul style="padding-right: 3px;">                                               
+                                <li *ngFor="let Str of stringList" >
+                                  {{Str}}
+                                </li>
+                                
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
