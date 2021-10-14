@@ -37,10 +37,10 @@ namespace Library.Controllers
 
             foreach (string str in splits)
             {
-                if (Regex.IsMatch(str, "^^"+ query +".*?",RegexOptions.IgnoreCase)) // Find words starting and ending with @@
+                if (Regex.IsMatch(str, "^^"+ query +".*?",RegexOptions.IgnoreCase)) 
                 {
                     striglist.Add(str.TrimEnd(',','.',':','"',';'));
-                    // You may replace either splits values or build a new string according your specification
+                  
                 }
             }
 

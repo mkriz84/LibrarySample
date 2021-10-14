@@ -5,6 +5,8 @@ using System.Web;
 
 namespace Library.Utilitty
 {
+    // Using Signleton Design Pattern  creating instance
+    //Object Oriented programming language, data encapsulation
 
     public sealed class Registartion
 

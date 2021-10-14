@@ -10,7 +10,7 @@ namespace Library.Controllers
     public class BooksController : ApiController
 	{
 		
-		// SOLID Princaipal  Single repsonsibilty 
+		// SOLID Princaiples  Single repsonsibilty 
 
 		IBooksMatchWord _iBooksMatchWord;        // only for Match the word
 		IBooksSearch _iBooksSearch;              // only for Search the word
@@ -62,7 +62,6 @@ namespace Library.Controllers
 
 
 			var Item = _iBooksList.books();
-
 			return Item;
 		}
 
@@ -73,17 +72,14 @@ namespace Library.Controllers
 		{
 
 			var Item = _iBooksSearch.Search(Id);
-
 			return Item;
 		}
 		[Route("{Id=}/{query=}")]
 		[HttpGet]
 	
-		public List<string> bookMatch(int Id,string query)
-		{
+		public List<string> bookMatch(int Id,string query)	{
 
 			var Item = _iBooksMatchWord.MostCommonWords(Id, query);
-
 			return Item;
 		}
 

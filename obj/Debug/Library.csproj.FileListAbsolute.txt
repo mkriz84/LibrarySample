@@ -83,3 +83,7 @@ C:\AG\Test\LibrarySample\obj\Debug\Library.csprojAssemblyReference.cache
 C:\AG\Test\LibrarySample\bin\System.Web.Cors.dll
 C:\AG\Test\LibrarySample\bin\System.Web.Http.Cors.dll
 C:\AG\Test\LibrarySample\bin\System.Web.Http.Cors.xml
+C:\AG\Test\LibrarySample\bin\Castle.Core.dll
+C:\AG\Test\LibrarySample\bin\Moq.dll
+C:\AG\Test\LibrarySample\bin\Castle.Core.xml
+C:\AG\Test\LibrarySample\bin\Moq.xml
